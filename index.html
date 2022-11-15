@@ -1,0 +1,26 @@
+<body>
+  <div id="root"></div>
+  
+  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+  <script type="module">
+    const rootElement = document.getElementById('root')
+    const elementProps = {className: 'container', id: 'greeting'}
+    const elementType = 'div'
+    const span1 = React.createElement('span', {
+      key: 1,
+      children: ['hello', ' '],
+    })
+    const span2 = React.createElement('span', {key: 2}, 'world')
+    
+    //ADD CHILDREN AS AN ARRAY
+    const reactElement = React.createElement(elementType, elementProps, [
+      span1,
+      span2,
+    ])  
+    
+    ReactDOM.createRoot(rootElement).render(reactElement)
+    console.log('span1', span1)
+    console.log('span2', span2)
+  </script>
+</body>
