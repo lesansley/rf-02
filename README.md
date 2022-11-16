@@ -25,3 +25,5 @@ The element is rendered to the page using ReactDOM
 const rootElement = document.getElementById("root")
 ReactDOM.createRoot(rootElement).render(reactElement)
 ```
+
+Attribution: https://epicreact.dev/modules/react-fundamentals/
