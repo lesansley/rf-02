@@ -11,7 +11,7 @@ React allows you to create elements. These React elements are simple objects tha
 Use `React.createElement()` to create an element.
 The arguments that `React.createElement()` accepts are `type`, `props`, `children`
 e.g. `React.createElement('div', {className="container"}, "Hello World")`
-alternatively you can set `children` as one of the object properties on `props`
+alternatively you can set `children` as one of the properties on `props` object
 e.g. `React.createElement('div', {className="container", children: "Hello World"})`
 The children argument can also be an array of other elements
 e.g.
